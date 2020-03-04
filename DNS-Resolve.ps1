@@ -1,13 +1,13 @@
 ﻿Write-Host "---------------MONDROGAR'S LOOPING DNS RESOLVE TOOL (Itory helped a bit)--------------" -ForegroundColor Green
 $error.clear()
 #clears error cache
-Write-host 'INPUT DELAY BETWEEN LOOPS IN SECONDS(eg. 10)' -ForegroundColor Yellow
+Write-host 'INPUT DELAY BETWEEN LOOPS IN SECONDS (eg. 10)' -ForegroundColor Yellow
 $sleep = Read-Host -Prompt 'Delay'
 #asks user for input
 Write-host 'INPUT DESTINATION SERVER (eg. mondrogar.cz)' -ForegroundColor Yellow
 $server = Read-Host -Prompt 'Destination server'
 #asks user for another input
-Write-host 'INPUT RESOLVE SERVER (eg. 8.8.8.8); If left empty, default will be used. Please separate multiple  resolve servers with comma.' -ForegroundColor Yellow
+Write-host 'INPUT RESOLVE SERVER (eg. 8.8.8.8); If left empty, default will be used. Please separate multiple resolve servers with comma.' -ForegroundColor Yellow
 $resolve = Read-Host -Prompt 'Resolve server'
 #asks user for yet another input
 $resolvearray = ($resolve.Split(",")).Trim()
